@@ -10,5 +10,5 @@ public class DecolaTechAvanade2025Application {
 		SpringApplication.run(DecolaTechAvanade2025Application.class, args);
 	}
 
-	// oi velho
+
 }
