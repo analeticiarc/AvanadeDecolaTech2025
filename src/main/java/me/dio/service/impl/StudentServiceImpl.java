@@ -1,5 +1,6 @@
 package me.dio.service.impl;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 import org.springframework.stereotype.Service;
@@ -29,6 +30,11 @@ public class StudentServiceImpl  implements StudentService{
             throw new IllegalArgumentException("This Student Id already exists.");
         }
         return studentRepository.save(studentToCreate);
+    }
+
+    @Override
+    public List<Student> getAllStudents() {
+        return studentRepository.findAll();
     }
 
 }
